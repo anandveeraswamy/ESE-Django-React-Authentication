@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 // TODO: change to env variable to prepare for deployment to production
-const API_URL = 'http://localhost:8000/api'
+// For development, replace API_URL with your backend URL here
+const API_URL = 'https://literate-xylophone-g95w9q7gj7hvrvr-8000.app.github.dev/api'
 
 const api = axios.create({
   baseURL: API_URL,
