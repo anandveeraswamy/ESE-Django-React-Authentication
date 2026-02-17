@@ -125,10 +125,21 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Auth
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
+]
+
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"https://.*\.app\.github\.dev",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:5173",
+    "https://*.app.github.dev",
 ]
 
 REST_FRAMEWORK = {
