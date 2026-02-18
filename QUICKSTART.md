@@ -1,5 +1,12 @@
 # Quick Start
 
+### Create .env File
+Create a `.env` file in the `backend` folder with the following content:
+```
+SECRET_KEY=your-secret-key-here
+```
+Replace `your-secret-key-here` with a secure secret key for Django.
+
 ## Backend Setup
 ```bash
 cd backend
@@ -10,13 +17,6 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
-
-### Create .env File
-Create a `.env` file in the `backend` folder with the following content:
-```
-SECRET_KEY=your-secret-key-here
-```
-Replace `your-secret-key-here` with a secure secret key for Django.
 
 Make the port 8000 public.
 
@@ -34,7 +34,7 @@ npm run dev
 ```
 
 ## Configure API URL
-In `frontend/services/api.js` (line 5), update the API_URL:
+In `frontend/src/services/api.js` (line 5), update the API_URL:
 ```javascript
 const API_URL = 'https://literate-xylophone-g95w9q7gj7hvrvr-8000.app.github.dev/'
 ```
